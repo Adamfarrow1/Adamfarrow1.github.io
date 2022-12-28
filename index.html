@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam's Portfolio</title>
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+<link rel="stylesheet" href="data/styles.css" type="text/css">
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<link rel="stylesheet" href="plugins/WOW-master/WOW-master/css/libs/animate.css" type="text/css">
+<link rel="stylesheet" href="connecting dots/styles.css" type="text/css">
+
+</head>
+<body>
+    
+    <div id="welcome-wrapper" class="welcome-wrapper">
+       
+        <div id="welcome-screen" class="container-xxl welcome welcome-wrapper d-flex flex-column align-items-center text-center justify-content-center">
+    
+            <div class="welcome-screen d-flex flex-column align-items-center text-center justify-content-center">
+                <p id="welcome-text" class="welcome-text fw-bold  welcome-wrapper wow slideInRight" data-wow-duration=".7s">
+                    <span class="small-welcome"> Hello, I'm </span>
+                    <span class="welcome-name"> Adam Farrow</span>
+                </p>
+
+                <p class="welcome-webdev wow slideInLeft" data-wow-duration=".7s">I'm an aspiring fullstack developer.</p>
+                <a href="#about-me" class="view-work wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s" >view my work  <img class="downward-arrow" src="data/downward-arrow.svg" alt=""></a>
+
+            </div>
+        </div>
+        <canvas id="canvas" class="canvas"> </canvas>
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-padding sticky-top wow fadeInDown">
+        <div class="container-xxl">
+                
+            <button class="navbar-toggler button" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" 
+            aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item" ><a class="nav-link " href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projectsCarousel">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item ms-2 d-none d-md-inline git">
+                    <a class="btn btn-secondary btn-sm" href="https://github.com/Adamfarrow1/">Github</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="align-center text-center intro wow fadeInDown" id="about-me"  data-wow-duration="1s" data-wow-delay=".5s">
+        <div class="container-xxl intro intro-background">
+            <div class="text-center">
+                <h2 class="text-secondary about-me">About-me</p>
+            </div>
+            <div class="row pt-5 justify-content-sapce-between">
+                <div class="col-lg-6 col-md-6 col-sm-12" >
+                    <img class="profile-pic" src="data/account.svg" alt="">
+                    <p class="intro-paragraph">I enjoy developing software and creating websites. But most importantly
+                        I love learning and becoming a better programmer. My passion started back in 2013 when I was 12 years old and
+                        I decided to jailbreak my iphone. After playing around with the different customizations for days on end I knew that 
+                        I loved technology and wanted it to be apart of my future. I have been programming for around 4 years now.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="row">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="align-center wow fadeInDown" id="skills" data-wow-duration="1s" data-wow-delay=".5s">
+            <div class="container-xxl">
+                <div class="skills intro align-items-center skills-end">
+                    <p class="text-center skills">Skills</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-center d-inline-block list-group-item-dark ">
+                            <p>Java</p>
+                        </li>
+                        <li class="list-group-item text-center d-inline-block list-group-item-dark">
+                            <p>JavaFx</p>
+                        </li>
+                        <li class="list-group-item text-center d-inline-block list-group-item-dark">
+                            <p>C</p>
+                        </li>
+                        <li class="list-group-item text-center d-inline-block list-group-item-dark">
+                            <p>JavaScript</p>
+                        </li>
+                        <li class="list-group-item text-center d-inline-block list-group-item-dark">
+                            <p>CSS/SCSS</p>
+                        </li>
+                        <li class="list-group-item text-center d-inline-block list-group-item-dark">
+                            <p>HTML</p>
+                        </li>
+                        <li class="list-group-item text-center d-inline-block list-group-item-dark">
+                            <p>Bootstrap</p>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+    </div>
+
+
+
+
+
+    <div id="projectsCarousel" class="carousel slide projects wow fadeInDown" data-bs-ride="carousel"  data-wow-duration="1s" data-wow-delay=".5s">
+        <p class="text-center skills projects-header">Projects</p>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="data/stairmaster_img.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="carousel-item-h">Infinite Stair master</h5>
+                    <p class="carousel-item-p">At the September 2022 Shellhacks hackathon a friend and I created a game. 
+                        In this game you can press space to go up in the direction your facing or
+                        L-ctrl to turn and move one space up. I helped contribute a queue represented
+                        by a linked list to store which move the player should make next as well as 
+                        many other features inside the game. The actual website can be found 
+                        <a id="link" href="https://nsanchez9009.github.io/Infinite-Stairmaster/">here.</a> The source code 
+                        can be found below which shows all my contributions.</p>
+                  </div>
+            </div>
+            <div class="carousel-item">
+                <img src="data/portfolio_img.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="carousel-item-h">Online Portfolio</h5>
+                    <p class="carousel-item-p">This website was created as another form of my resume. It was created 
+                        using Bootstrap, HTML, CSS, and JavaScript.
+                    </p>
+                  </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+    </div>
+    
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script src="plugins/WOW-master/WOW-master/dist/wow.min.js"></script>
+<script src="connecting dots/connectingdots.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="main.js"></script>
+</body>
+</html>
