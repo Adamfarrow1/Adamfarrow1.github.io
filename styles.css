@@ -211,25 +211,18 @@ p{
 .about-me-text{
     padding-right: 4em;
 }
-
-
-
-.about-me-skills{
-
-    height: 10em;
+.border-lang{
+    border: #4c3196 3px solid;
+    border-radius: 1em;
+    padding: 1em;
     margin-bottom: 2em;
-
-    border: double 3px transparent;
-
-    border-image-slice: 1;
-    border-width: 3px;
-    background-image: linear-gradient(#181717, #181717),
-      radial-gradient(circle at top left, #7464a1, black);
-    border-radius: 10px;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    
+    margin-right: 1em;
 }
+.languages-svg{
+    height: 6em;
+    width: 6em;
+}
+
 #skills{
     background-color: #181717;
 }
