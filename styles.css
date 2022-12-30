@@ -314,15 +314,13 @@ p{
 }
 
 
-@media (max-width:1270px){
-    .carousel-item-p{
-        font-size: 1em;
-    }
+.carousel-item-p{
+    font-size: .7em;
 }
 
 @media (max-width:1025px){
     .carousel-item-p{
-        font-size: .9em;
+        font-size: .5em;
     }
 }
 
