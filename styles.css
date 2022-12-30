@@ -124,6 +124,9 @@ body{
     padding-left: 2.5em;
 }
 
+.mobile-item{
+    border-bottom: black solid 1px;
+}
 
 .about-me{
     line-height: 1.6;
@@ -393,6 +396,7 @@ input[type="text"], textarea {
 
 .submit:hover{
     box-shadow: inset 8em 0 0 0 #4c3196;
+    
 }
 
 .footer{

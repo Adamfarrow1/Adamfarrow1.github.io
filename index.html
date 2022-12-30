@@ -44,18 +44,18 @@
     <nav class="navbar navbar-expand-md navbar-padding sticky-top wow fadeInDown ">
         <div class="container-xxl">
                 
-            <button class="navbar-toggler button" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" 
+            <button onclick="mobileNav()" class="navbar-toggler button" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" 
             aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
         <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
             <ul class="navbar-nav">
-                <li class="nav-item" ><a class="nav-link " href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about-me">About me</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projectsCarousel">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                <li class="nav-item ms-2 d-none d-md-inline git">
+                <li class="nav-item" id="nav-items"  ><a class="nav-link " href="#">Home</a></li>
+                <li class="nav-item" id="nav-items" ><a class="nav-link" href="#about-me">About me</a></li>
+                <li class="nav-item" id="nav-items" ><a class="nav-link" href="#projectsCarousel">Projects</a></li>
+                <li class="nav-item" id="nav-items" ><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item ms-2 d-none d-md-inline git"  id="nav-items">
                     <a class="btn btn-secondary btn-sm" href="https://github.com/Adamfarrow1/">Github</a>
                 </li>
             </ul>
@@ -212,8 +212,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 <script src="plugins/WOW-master/WOW-master/dist/wow.min.js"></script>
 <script src="connecting dots/connectingdots.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="mobileNav/mobileNav.js"></script>
 
 <script src="main.js"></script>
 </body>
