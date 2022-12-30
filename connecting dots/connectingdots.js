@@ -8,11 +8,12 @@ var ga
 var mouse = { x:0, y:0};
 
   if(window.innerWidth >= 1600){
-  var FPS = 90, // Frames per second
+  var FPS = 70, // Frames per second
       x = 600, // Number of stars
       connected = 0,
       md = 350,
-      sd = 400,
+      sd = 300,
+      dotvisibility = 800
       mouseConnections = 60,
       ga = 1;
       mouse = {
@@ -23,11 +24,12 @@ var mouse = { x:0, y:0};
     else if(window.innerWidth >= 1300){
 
     var  FPS = 90, // Frames per second
-      x = 350, // Number of stars
+      x = 550, // Number of stars
       connected = 0;
       ga = 1,
-      md = 250,
-      sd = 400,
+      md = 200,
+      sd = 300,
+      dotvisibility = 500,
       mouseConnections = 60,
       mouse = {
         x: 0,
@@ -41,6 +43,7 @@ var mouse = { x:0, y:0};
       ga = 1,
       md = 0,
       sd = 0,
+      dotvisibility = 400,
       mouseConnections = 0,
       mouse = {
         x: 0,
@@ -58,7 +61,7 @@ function start(){
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
       radius: Math.random() * 1.5 + 1,
-      fps: Math.random() * 40 + 21,
+      fps: Math.random() * 40 + 31,
       vx: Math.floor(Math.random() * 50) - 25,
       vy: Math.floor(Math.random() * 50) - 25
     });
@@ -81,10 +84,10 @@ canvas.height = window.innerHeight;
     var s = stars[i];
     //distance of stars disapearing
 
-    if(distance(mouse, s) > 700)
+    if(distance(mouse, s) > dotvisibility)
        continue
     else if(distance(mouse, s) > 200){
-      var fade = (distance(mouse, s) - 800) / 1000;
+      var fade = (distance(mouse, s) - dotvisibility) / 1000;
       ctx.globalAlpha = Math.abs(Math.round(fade * 100) / 100) ;
     }
     else{
@@ -147,7 +150,7 @@ function redrawLines(){
 
       // ctx.globalAlpha = starI.ga
 
-      if(distance(starI, starII) < md && stars[i].connected <= 11 && stars[j].connected <= 11) {
+      if(distance(starI, starII) < md && stars[i].connected != 10 && stars[j].connected != 10) {
         
 
         //ctx.globalAlpha = (1 / 150 * distance(starI, starII).toFixed(1));
@@ -233,6 +236,7 @@ function updateValues(){
         md = 350 //distance of stars seem from mouse
         sd = 400 //distance of stars connected to other stars
         mouseConnections = 60
+        dotvisibility = 800
         ga = 1 //!!!!!to be deleted
         mouse = {
           x: 0,
@@ -247,6 +251,7 @@ function updateValues(){
         ga = 1
         md = 250
         sd = 400
+        dotvisibility = 500
         mouseConnections = 60
         mouse = {
           x: 0,
@@ -260,6 +265,7 @@ function updateValues(){
         ga = 1
         md = 0
         sd = 0
+        dotvisibility = 400
         mouseConnections = 0
         mouse = {
           x: 0,

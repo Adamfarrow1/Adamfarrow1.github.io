@@ -36,7 +36,7 @@ body{
 
 
 .welcome-webdev{
-    font-size: 2em;
+    font-size: 1.3em;
     color: #6c6a70;
 }
 
@@ -44,13 +44,18 @@ body{
     height: .8em;
 }
 
+.view-work-text{
+    font-size: 12px;
+}
+
 .view-work{
     color: rgba(231, 213, 213, 0.699);
+
     font-size: 1em;
     letter-spacing: .1em;
     text-decoration: none;
     color: grey;
-    border: 3px solid #6465a1;
+    border: 2px solid #6465a1;
     padding-bottom: .3em;
     padding-left: 2em;
     padding-right: 1.4em;
@@ -67,14 +72,14 @@ body{
 
 
 .small-welcome{
-    font-size: 36px;
+    font-size: 27px;
     color: grey;
 }
 .welcome-text{
     color: grey;
     justify-content: center;
     align-items: center;
-    font-size: 48px;
+    font-size: 36px;
 }
 
 .welcome-button{
@@ -110,7 +115,12 @@ body{
     padding: 1%;
 }
 
+.profile-pic{
+    height: 8em;
+}
+
 .nav-item{
+    font-size: .7em;
     padding-left: 2.5em;
 }
 
@@ -120,6 +130,7 @@ body{
     text-decoration: none; 
     position: relative; 
     padding-top: 3em;
+    font-size: 1.3em;
 
 }
 
@@ -226,6 +237,7 @@ p{
 
 
 .intro-paragraph{
+    font-size: 1em;
     padding-top: 3em;
     padding-bottom: 5em;
 }
@@ -245,8 +257,8 @@ p{
 }
 
 .languages-svg{
-    height: 6em;
-    width: 6em;
+    height: 4em;
+    width: 4em;
 }
 
 
@@ -273,6 +285,7 @@ p{
 
 .projects-header{
     padding: 1em;
+    font-size: 1.3em;
 }
 
 .carousel-wrapper{
@@ -358,8 +371,8 @@ input[type="text"], textarea {
 }
 
 .submit{
-    height: 3em;
-    width: 8em;
+    height: 2.3em;
+    width: 6em;
     margin-bottom: 3em;
     border-radius: 4px;
     background-color: grey ;
@@ -370,12 +383,22 @@ input[type="text"], textarea {
 
 }
 
+@media (max-width: 480px){
+    input{
+        width: 90%;
+    }
+
+    input[type="text"], textarea {
+        width: 90%;
+    }
+}
+
 .submit:hover{
     box-shadow: inset 8em 0 0 0 #4c3196;
 }
 
 .footer{
-    margin-top: 200px;
-    height: 0;
+
+    height: 1em;
     background-color: rgb(22, 20, 20);
 }
