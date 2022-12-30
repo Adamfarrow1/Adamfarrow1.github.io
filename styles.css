@@ -310,11 +310,6 @@ p{
 
 }
 
-@media(max-width:916px){
-    .carousel-wrapper{
-        
-    }
-}
 
 
 .carousel-item-p{
@@ -334,7 +329,6 @@ p{
 .contact{
     margin-top: 5.5em;
     color: white;
-    height: 90vh;
 }
 
 
@@ -400,7 +394,5 @@ input[type="text"], textarea {
 }
 
 .footer{
-
-    height: 1em;
     background-color: rgb(22, 20, 20);
 }
