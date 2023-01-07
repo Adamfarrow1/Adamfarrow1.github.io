@@ -310,6 +310,35 @@ p{
 
 }
 
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.363);
+    border-radius: 20px;
+}
+
+
+.live-app{
+    color: white;
+    font-size: .8em;
+    background: transparent;
+    border: white 1px solid;
+    border-radius: 8px;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    padding-left: .5em;
+    padding-right: .5em;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.live-app:hover{
+    box-shadow: 0 0 2em #7464a1;
+    letter-spacing: .2em;
+    background-color: #7464a1;
+    border: #7464a1 1px solid;
+    color: black;
+}
+
+
 
 
 .carousel-item-p{

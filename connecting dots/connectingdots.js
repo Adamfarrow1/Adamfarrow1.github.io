@@ -21,7 +21,7 @@ var mouse = { x:0, y:0};
         y: 0
       };  // mouse location
     }
-    else if(window.innerWidth >= 1300){
+    else if(window.innerWidth >= 1000){
 
     var  FPS = 90, // Frames per second
       x = 550, // Number of stars
@@ -278,6 +278,7 @@ function updateValues(){
 
   
     window.onresize = function () {
+      //needs fix
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
       var e = window.event;
